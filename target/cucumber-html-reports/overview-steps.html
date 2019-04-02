@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+              <td>1</td>
+            <td>02 Apr 2019, 23:07</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">GeneralSteps.goToUrl(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="26359702289">26.359</td>
+              <td class="duration" data-value="26359702289">26.359</td>
+              <td class="duration" data-value="26359702289">26.359</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageSteps.iClickSubmit()</td>
+              <td>1</td>
+              <td class="duration" data-value="10321188501">10.321</td>
+              <td class="duration" data-value="10321188501">10.321</td>
+              <td class="duration" data-value="10321188501">10.321</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomePageSteps.select_section(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="5308834505">5.308</td>
+              <td class="duration" data-value="5308834505">5.337</td>
+              <td class="duration" data-value="10617669011">10.617</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.FilterInsuranceTravelResultsByPromosOnly()</td>
+              <td>1</td>
+              <td class="duration" data-value="5377333867">5.377</td>
+              <td class="duration" data-value="5377333867">5.377</td>
+              <td class="duration" data-value="5377333867">5.377</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.check_exact_number_of_results_found(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="20073326955">20.073</td>
+              <td class="duration" data-value="20073326955">20.073</td>
+              <td class="duration" data-value="20073326955">20.073</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.check_insurance_travel_results_by_insurers(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="551353615">0.551</td>
+              <td class="duration" data-value="551353615">0.551</td>
+              <td class="duration" data-value="551353615">0.551</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.check_number_of_results_found(int)</td>
+              <td>2</td>
+              <td class="duration" data-value="108703320">0.108</td>
+              <td class="duration" data-value="108703320">0.139</td>
+              <td class="duration" data-value="217406640">0.217</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.filter_by_insurer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5197427256">5.197</td>
+              <td class="duration" data-value="5197427256">5.197</td>
+              <td class="duration" data-value="5197427256">5.197</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.iFilterInsuranceTravelResultsByShowAll()</td>
+              <td>1</td>
+              <td class="duration" data-value="5231186270">5.231</td>
+              <td class="duration" data-value="5231186270">5.231</td>
+              <td class="duration" data-value="5231186270">5.231</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.select_destination(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13269401392">13.269</td>
+              <td class="duration" data-value="13269401392">13.269</td>
+              <td class="duration" data-value="13269401392">13.269</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.select_travel_start_date(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10682794861">10.682</td>
+              <td class="duration" data-value="10682794861">10.682</td>
+              <td class="duration" data-value="10682794861">10.682</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.set_details_by_policy_type(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10349151673">10.349</td>
+              <td class="duration" data-value="10349151673">10.349</td>
+              <td class="duration" data-value="10349151673">10.349</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">InsuranceTravelSteps.sort_by_review_score(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5304150273">5.304</td>
+              <td class="duration" data-value="5304150273">5.304</td>
+              <td class="duration" data-value="5304150273">5.304</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ReportSteps.report_append_note(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3129459">0.003</td>
+              <td class="duration" data-value="3129459">0.003</td>
+              <td class="duration" data-value="3129459">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ReportSteps.set_testcase_ID(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="294057043">0.294</td>
+              <td class="duration" data-value="294057043">0.294</td>
+              <td class="duration" data-value="294057043">0.294</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>15</td>
+            <td>17</td>
+            <td class="duration">7.285</td>
+            <td class="duration">26.359</td>
+            <td class="duration">2:3.849</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "search for a Travel Insurance should return at least 3 result cards",
+        "description": "",
+        "id": "test-travel-insurance-page-of-gobear;search-for-a-travel-insurance-should-return-at-least-3-result-cards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 325385195,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testcase-ID (GOBEAR_01) - Testcase description (Verify Travel Insurance page and its functional menu)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GOBEAR_01",
+                  "offset": 13
+                },
+                {
+                  "val": "Verify Travel Insurance page and its functional menu",
+                  "offset": 48
+                }
+              ],
+              "location": "ReportSteps.set_testcase_ID(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26626520925,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to url: /ph?x_session_type\u003dUAT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/ph?x_session_type\u003dUAT",
+                  "offset": 13
+                }
+              ],
+              "location": "GeneralSteps.goToUrl(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5474596828,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I select section: Insurance",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Insurance",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageSteps.select_section(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5389593426,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select section: Insurance_Travel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Insurance_Travel",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageSteps.select_section(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10538197486,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click Submit",
+            "match": {
+              "location": "HomePageSteps.iClickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162479264,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I see Insurance Travel page displays with at least (3) options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 52
+                }
+              ],
+              "location": "InsuranceTravelSteps.check_number_of_results_found(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5435603466,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I filter Insurance Travel results by Promos only",
+            "match": {
+              "location": "InsuranceTravelSteps.FilterInsuranceTravelResultsByPromosOnly()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10119381367,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I see Insurance Travel page displays with (0) options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 43
+                }
+              ],
+              "location": "InsuranceTravelSteps.check_exact_number_of_results_found(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5155355635,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I filter Insurance Travel results by Show all",
+            "match": {
+              "location": "InsuranceTravelSteps.iFilterInsuranceTravelResultsByShowAll()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51693241,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I see Insurance Travel page displays with at least (3) options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 52
+                }
+              ],
+              "location": "InsuranceTravelSteps.check_number_of_results_found(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5191266756,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I filter Insurance Travel results by Insurer: Pacific Cross",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pacific Cross",
+                  "offset": 46
+                }
+              ],
+              "location": "InsuranceTravelSteps.filter_by_insurer(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 669741702,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I see Insurance Travel page displays with results of: Pacific Cross",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pacific Cross",
+                  "offset": 54
+                }
+              ],
+              "location": "InsuranceTravelSteps.check_insurance_travel_results_by_insurers(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5339783208,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I sort Insurance Travel results by Review score: desc",
+            "match": {
+              "arguments": [
+                {
+                  "val": "desc",
+                  "offset": 49
+                }
+              ],
+              "location": "InsuranceTravelSteps.sort_by_review_score(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10250821476,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I set details - policy type: annual",
+            "match": {
+              "arguments": [
+                {
+                  "val": "annual",
+                  "offset": 29
+                }
+              ],
+              "location": "InsuranceTravelSteps.set_details_by_policy_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13311300640,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I select destination: Schengen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Schengen",
+                  "offset": 22
+                }
+              ],
+              "location": "InsuranceTravelSteps.select_destination(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10813515325,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I select travel start date: today",
+            "match": {
+              "arguments": [
+                {
+                  "val": "today",
+                  "offset": 28
+                }
+              ],
+              "location": "InsuranceTravelSteps.select_travel_start_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5533584,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "report - append note (Result;PASSED)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Result",
+                  "offset": 22
+                },
+                {
+                  "val": "PASSED",
+                  "offset": 29
+                }
+              ],
+              "location": "ReportSteps.report_append_note(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@gobear"
+          }
+        ]
+      }
+    ],
+    "name": "test Travel Insurance page of GoBear",
+    "description": "",
+    "id": "test-travel-insurance-page-of-gobear",
+    "keyword": "Feature",
+    "uri": "Travel/travel_insurance.feature"
+  }
+]
